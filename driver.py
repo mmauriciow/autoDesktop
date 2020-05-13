@@ -11,6 +11,8 @@ def writeEmail(email, OS):
     py.write(user, 0.1)
     if OS == 'MAC_OS':
         py.hotkey('alt', '2')
+    else:
+        py.write('@')
     py.write(domain, 0.1)
 
 def write(text):
