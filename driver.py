@@ -9,7 +9,8 @@ def clickOn(x, y, clk = 1):
 def writeEmail(email, OS):
     user, domain = email.split('@')
     py.write(user, 0.1)
-    if OS == 'MAC_OS' py.hotkey('alt', '2') else 
+    if OS == 'MAC_OS':
+        py.hotkey('alt', '2')
     py.write(domain, 0.1)
 
 def write(text):
