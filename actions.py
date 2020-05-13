@@ -6,8 +6,8 @@ width, height = dv.getSize()
 
 def openDrive(OS):
     if OS == 'MAC_OS':
-        driver = subprocess.Popen(["/usr/bin/open", "-n", "-a", "/Applications/Claro drive.app"])
-        # os.system()
+        # driver = subprocess.Popen(["/usr/bin/open", "-n", "-a", "/Applications/Claro drive.app"])
+        os.system('open /Applications/Claro\ drive.app/')
     else:
         driver = subprocess
 
