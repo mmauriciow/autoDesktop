@@ -6,10 +6,10 @@ def clickOn(x, y, clk = 1):
     py.moveTo(x, y)
     py.click(clicks = clk)
 
-def writeEmail(email):
+def writeEmail(email, OS):
     user, domain = email.split('@')
     py.write(user, 0.1)
-    py.hotkey('alt', '2')
+    if OS == 'MAC_OS' py.hotkey('alt', '2') else 
     py.write(domain, 0.1)
 
 def write(text):

@@ -4,8 +4,11 @@ from time import sleep
 
 width, height = dv.getSize()
 
-def openDrive():
-    driver = subprocess.Popen(["/usr/bin/open", "-n", "-a", "/Applications/Claro drive.app"])
+def openDrive(OS):
+    if OS == 'MAC_OS':
+        driver = subprocess.Popen(["/usr/bin/open", "-n", "-a", "/Applications/Claro drive.app"])
+    else
+        driver = subprocess
 
 def login(email, password):
     dv.clickOn(width//2 + 130, height//2 - 120, 2)
